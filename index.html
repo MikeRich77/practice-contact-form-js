@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario de contacto con validación JS</title>
+  <link rel="stylesheet" href="styles.css" />
+  </head>
+<body>
+<main class="card">
+<h1>Contacto</h1>
+<p class="subtitle">Práctica personal: formulario con validación en JavaScript puro (sin librerías).</p>
+<form id="contact-form" novalidate>
+<div class="field">
+<label for="name">Nombre</label>
+<input type="text" id="name" name="name" placeholder="Tu nombre" />
+<span class="error" id="name-error"></span>
+</div>
+<div class="field">
+<label for="email">Email</label>
+<input type="text" id="email" name="email" placeholder="tucorreo@ejemplo.com" />
+<span class="error" id="email-error"></span>
+</div>
+<div class="field">
+<label for="phone">Teléfono</label>
+<input type="text" id="phone" name="phone" placeholder="644 813 093" />
+<span class="error" id="phone-error"></span>
+</div>
+<div class="field">
+<label for="message">Mensaje</label>
+<textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje (mínimo 10 caracteres)"></textarea>
+<span class="error" id="message-error"></span>
+</div>
+<button type="submit">Enviar</button>
+<p class="success" id="success-message" hidden>Formulario enviado correctamente.</p>
+</form>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
